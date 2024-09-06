@@ -49,3 +49,28 @@ Question: 1 + 1
 Nik, you lose
 [?2004h]0;nik@MTPC3: ~[01;32mnik@MTPC3[00m:[01;34m~[00m$ [?2004l
 exit
+^[[A[?2004h]0;nik@MTPC3: ~[01;32mnik@MTPC3[00m:[01;34m~[00m$ brain-gcd[Kbrain-gcd
+[?2004lYour name? sdv
+Find the greatest common divisor of given numbers
+Question: 3 42
+3
+Correct
+Question: 26 42
+4
+4 is wrong answer ;(. Correct answer was 2
+sdv, you lose
+[?2004h]0;nik@MTPC3: ~[01;32mnik@MTPC3[00m:[01;34m~[00m$ brain-gcd
+[?2004lYour name? fs
+Find the greatest common divisor of given numbers
+Question: 31 43
+1
+Correct
+Question: 21 6
+3
+Correct
+Question: 38 43
+1
+Correct
+Congratulations, fs!
+[?2004h]0;nik@MTPC3: ~[01;32mnik@MTPC3[00m:[01;34m~[00m$ [?2004l
+exit
