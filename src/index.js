@@ -4,7 +4,7 @@ const name = readlineSync.question("Your name? ");
 console.log(gameDescr);
 for (let i=0; i<3;i++) {
 const quest = question();
-console.log('Question: ' + quest);
+console.log('Question: ' + quest[0]);
 const userAnswer = readlineSync.question('');
 const result = checkAnswer(quest, userAnswer);
 if(result === 'Correct') {

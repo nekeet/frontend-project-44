@@ -3,15 +3,16 @@ import {randomNumber, getRandomOperator, calc } from '../src/calc.js';
 import readlineSync from 'readline-sync';
 import {game} from '../src/index.js'
 
-const gameDescr = 'Answer "yes" if the number is even, otherwise answer "no".';
+const gameDescr = 'What is the result of the expression?.';
 const question = () =>{
 const num1 = randomNumber();
 const num2 = randomNumber();
 const operator = getRandomOperator();
-return `${num1} ${operator} ${num2}`;
+const string = `${num1} ${operator} ${num2}`
+return [string, num1, num2, operator];
 };
 const checkAnswer = (quest,userAnswer) => {
-const [num1,operator,num2] = quest.split(' ');
-return calc(Number(num1),Number(num2),operator,userAnswer);
+const [string, num1, num2, operator]  = quest;
+return calc(num1,num2,operator,userAnswer);
 };
 game(gameDescr,question,checkAnswer);

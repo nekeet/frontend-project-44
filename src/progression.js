@@ -1,51 +1,13 @@
-export function getStep ()  {
-  const lengthstep = Math.floor(Math.random()*5 + 2);
-  return lengthstep;
-}
-
-export function start () {
-  const first = Math.floor(Math.random()*20 + 1);
-  return first;
+export function getRandomNumber (min,max)  {
+  return Math.floor(Math.random()*(max-min + 1) + min);
 }
 
 
-
-export function progression (firstNumber,step) {
+export function progression (first,step,length) {
   let result = [];
-  for (let i = 0; i <10 ; i++){
-    result.push(firstNumber + i * step);
+  for (let i = 0; i <length ; i++){
+    result.push(first + i * step);
   }
   return result; 
 }
 
-export function randomIndex () {
-  const index = Math.floor(Math.random() * 10 + 1);
-  return index;
- }
-
-
-
-
-export function hiddenProgression (progressionArray, indexProgression) {
- const hiddenArray = progressionArray.slice();
-  hiddenArray[indexProgression] = '..';
-  return hiddenArray;
-}
-export function hiddenIndex (arrayWithHiddenIndex, userAnswer, step ) {  
-  let result;
-  let correctAnswer ;
-  for( let i = 0; i <arrayWithHiddenIndex.length; i++) {
-    if (arrayWithHiddenIndex[i] === '..') {
-      let hiddenIndex = i;
-      correctAnswer =  arrayWithHiddenIndex[hiddenIndex - 1] + step;
-      arrayWithHiddenIndex[i] = userAnswer;
-
-    }
-  }
-   if (userAnswer === correctAnswer) {
-      result = 'Correct';
-    } else {
-      result = `${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}`;
-    }
-  return result;
-}
