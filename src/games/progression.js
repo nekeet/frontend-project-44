@@ -18,8 +18,8 @@ const progression = () => {
         progressionArray.push(first + i * step);
     }
     correctAnswer = progressionArray[randomIndex];
-    progressionArray[randomIndex] = '..'
-    return [progressionArray, correctAnswer];
+    progressionArray[randomIndex] = '..';
+    return [progressionArray.join(' '), correctAnswer];
 }
 
 const gameDescr = 'What number is missing in the progression?';
