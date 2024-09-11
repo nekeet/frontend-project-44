@@ -12,10 +12,10 @@ export const game = (gameDescr, roundResult) => {
         if (userAnswer == correctAnswer) {
             result = 'Correct';
         } else {
-            result = `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. Let's try again, ` + name;
+            result = `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ` + name + '!';
         }
         if (result === 'Correct') {
-            console.log('Correct');
+            console.log('Correct!');
         } else {
             console.log(result);
             return;
