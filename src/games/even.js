@@ -9,7 +9,7 @@ const yesOrNo = () => {
     let correctAnswer;
     if (num % 2 === 0) {
         correctAnswer = "yes";
-    } else if (num % 2 !== 0 && str !== 'no') {
+    } else if (num % 2 !== 0) {
         correctAnswer = 'no';
     }
     return [num, correctAnswer];

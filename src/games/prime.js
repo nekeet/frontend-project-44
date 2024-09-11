@@ -10,7 +10,7 @@ const isSimpleNumber = () => {
     const number = randomNumber();
 
     let correctAnswer;
-    let divisors = 1;
+    let divisors = 0;
     if (number <= 1) {
         result = 'no'
     }
