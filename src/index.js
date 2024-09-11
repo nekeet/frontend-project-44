@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 
 export const game = (gameDescr, roundResult) => {
-    const name = readlineSync.question("Your name? ");
+    const name = readlineSync.question("May I have your name?");
     console.log(gameDescr);
     for (let i = 0; i < 3; i++) {
         const [question, correctAnswer] = roundResult();
