@@ -12,7 +12,7 @@ const isSimpleNumber = () => {
     let correctAnswer;
     let divisors = 0;
     if (number <= 1) {
-        result = 'no'
+        correctAnswer = 'no'
     }
     for (let i = 1; i <= number; i++) {
         if (number % i === 0) {
