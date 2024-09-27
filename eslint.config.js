@@ -1,6 +1,6 @@
-import globals from "globals";
-import pluginJs from "@eslint/js";
-import eslintConfigAirbnb from "eslint-config-airbnb-base";
+import globals from 'globals';
+import pluginJs from '@eslint/js';
+import eslintConfigAirbnb from 'eslint-config-airbnb-base';
 
 const airbnbRules = eslintConfigAirbnb.rules;
 
