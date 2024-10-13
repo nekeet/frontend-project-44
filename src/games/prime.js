@@ -1,34 +1,28 @@
-import { game } from '../index.js';
+import game from '../index.js';
 
-
-const randomNumber = () => {
-    return Math.floor(Math.random() * 50) + 1;
-}
-
+const randomNumber = () => Math.floor(Math.random() * 50) + 1;
 
 const isSimpleNumber = () => {
-    const number = randomNumber();
+  const number = randomNumber();
 
-    let correctAnswer;
-    let divisors = 0;
-    if (number <= 1) {
-        correctAnswer = 'no'
+  let correctAnswer;
+  let divisors = 0;
+  if (number <= 1) {
+    correctAnswer = 'no';
+  }
+  for (let i = 1; i <= number; i += 1) {
+    if (number % i === 0) {
+      divisors += 1;
     }
-    for (let i = 1; i <= number; i++) {
-        if (number % i === 0) {
-            divisors++;
-        }
-    }
-    if (divisors === 2) {
-        correctAnswer = 'yes'
-    }
-    else if (divisors > 2) {
-        correctAnswer = 'no'
-    }
-    return [number, correctAnswer];
-}
+  }
+  if (divisors === 2) {
+    correctAnswer = 'yes';
+  } else if (divisors > 2) {
+    correctAnswer = 'no';
+  }
+  return [number, correctAnswer];
+};
 
 const gameDescr = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-
-game(gameDescr, isSimpleNumber)
+game(gameDescr, isSimpleNumber);

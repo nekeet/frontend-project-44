@@ -1,2 +1,4 @@
 #!/usr/bin/env node
-import '../src/games/cli.js';
+import needName from '../src/games/cli.js';
+
+console.log(needName());
