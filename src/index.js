@@ -9,7 +9,7 @@ export default function game(gameDescr, roundResult) {
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('');
     let result;
-    if (userAnswer == correctAnswer) {
+    if (String(userAnswer) === String(correctAnswer)) {
       result = 'Correct';
     } else {
       result = `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${name}!`;

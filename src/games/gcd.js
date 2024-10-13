@@ -8,7 +8,7 @@ const commonDivisor = () => {
   const question = `${num1} ${num2}`;
   const min = Math.min(num1, num2);
   let correctAnswer;
-  for (let i = 1; i <= min; i+=1) {
+  for (let i = 1; i <= min; i += 1) {
     if (num1 % i === 0 && num2 % i === 0) {
       correctAnswer = i;
     }
